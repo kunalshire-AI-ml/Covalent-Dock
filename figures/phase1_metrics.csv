@@ -1,0 +1,12 @@
+﻿metric,value,denominator,percent,note
+CovPDB jobs,6230,6230,100.0,funnel stage
+supported residue,6173,6230,99.1,funnel stage
+ligand usable,6006,6230,96.4,funnel stage
+warhead detected,5302,6230,85.1,funnel stage
+compatible with the residue,5289,6230,84.9,funnel stage
+runlist (readable as PDB),4839,6230,77.7,funnel stage
+Residue coverage,6173,6230,99.1,residues the tool has a nucleophile for
+Warhead coverage,5302,6006,88.3,ligands the warhead library matches
+Compatibility coverage,5289,5302,99.8,detected warheads suiting the residue
+Dockable coverage,4839,6230,77.7,the Phase 2 runlist
+Distinct structures in runlist,4563,,,PDB entries to load
