@@ -1,0 +1,20 @@
+# ── Required ──────────────────────────────────────────────────────────────────
+streamlit>=1.30
+rdkit>=2023.9.1
+
+# ── Optional ──────────────────────────────────────────────────────────────────
+# Formatted .xlsx export of the score table. Without it, CSV export still works.
+openpyxl>=3.1
+
+# ── Not installable with pip ──────────────────────────────────────────────────
+# gnina   — the docking engine itself. The app detects it on PATH; if it is
+#           missing, every other step still runs and the app hands you the
+#           command to run elsewhere.
+#           https://github.com/gnina/gnina  (or: docker pull gnina/gnina)
+#
+# obabel  — OpenBabel, used only as a fallback when RDKit cannot embed a
+#           ligand or convert an SDF pose to PDB.
+#           conda install -c conda-forge openbabel   |   apt install openbabel
+#
+# plip    — optional post-docking interaction profiling of the complex.
+#           pip install plip     (pulls in openbabel bindings)
